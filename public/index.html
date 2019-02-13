@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Noticiero popular</title>
+  <style>
+    body {
+      background-color: rgb(214, 214, 214)
+    }
+
+    #wrapper {
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      padding-top: 2%;
+    }
+
+    #articles {
+      display: inline-block;
+      text-align: justify;
+      width: 70%;
+      height: 700px;
+    }
+
+    #notes {
+      width: 27%;
+      margin: 1%;
+      width: 24%;
+      top: 0;
+      right: 0;
+      position: fixed;
+    }
+
+    textarea,
+    input {
+      display: block;
+      width: 100%;
+      border: black solid;
+      border-top: none;
+      background-color: rgb(214, 214, 214);
+    }
+
+    input {
+      height: 36px;
+      font-size: 24px;
+      border: black solid;
+      width: 100.8%;
+      border-radius: 10px 10px 0px 0px;
+    }
+
+    textarea {
+      height: 200px;
+      font-size: 18px;
+      border-radius: 0px 0px 10px 10px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>Noticiero popular</h1>
+    <h2><i>Extra! Extra!
+      </i></h2>
+      <nav>
+        <button class="note-comment">Comment</button>
+        <button id="scrape-button">Scrape</button>
+        <button class="save-article">Save Article</button>
+        <button class="delete-article">Delete article</button>
+        <button id="submt-note">Submit note</button>
+        <button class="delete-note">Delete note</button>
+
+      </nav>
+    <div id="articles"></div>
+    <div id="notes"></div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
